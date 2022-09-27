@@ -192,4 +192,4 @@ function printAge(age:number|string): void{
 
 function calculates(price:number|string, ){
 
-}
+} 
