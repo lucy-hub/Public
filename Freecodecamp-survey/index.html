@@ -8,8 +8,14 @@
   </head>
   <body>
     <main>
-        <h1>freeCodeCamp Survey Form</h1>
-        <p><em>Thank you for taking the time to help us inprove the platform</em></p>
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <p id="description"><em>Thank you for taking the time to help us inprove the platform</em></p>
+
+        <form id="survey-form">
+            <label id="name-label" for="name">Name<input name="name" id="name" type="text" placeholder="Enter your name" required></label>
+            <label id="email-label" for="email">Email<input name="email" id="email" type="email" placeholder="Enter your Email" required></label>
+            <label id="number-label" for="number">Age <small>(optional)</small><input name="number" id="number" min="13" max="120" type="number" placeholder="Age"></label>
+        </form>
     </main>
   </body>
   
