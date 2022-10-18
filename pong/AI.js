@@ -30,7 +30,7 @@ function AI(){
             this.acc.y+=this.spd;
             
         }*/
-        var easing =  0.7
+        var easing =  1
         //random(0.5,0.53);
         dx = ball.pos.y * easing
         this.pos.y = dx;

@@ -6,3 +6,8 @@ input {
     display:block;
 }
 
+.form-box {
+    background-color: aqua;
+    max-width: 500px;
+    min-width: 200px;
+}

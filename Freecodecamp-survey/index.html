@@ -10,52 +10,59 @@
     <main>
         <h1 id="title">freeCodeCamp Survey Form</h1>
         <p id="description"><em>Thank you for taking the time to help us inprove the platform</em></p>
+        <div class="form-box">
+            <form id="survey-form">
+                <fieldset>
+                    <label id="name-label" for="name">Name<input id="name" type="text" placeholder="Enter your name" required></label>
+                    <label id="email-label" for="email">Email<input id="email" type="email" placeholder="Enter your Email" required></label>
+                    <label id="number-label" for="number">Age <small>(optional)</small><input value="number" id="number" min="13" max="120" type="number" placeholder="Age"></label>
+                </fieldset>
 
-        <form id="survey-form">
-            <fieldset>
-                <label id="name-label" for="name">Name<input id="name" type="text" placeholder="Enter your name" required></label>
-                <label id="email-label" for="email">Email<input id="email" type="email" placeholder="Enter your Email" required></label>
-                <label id="number-label" for="number">Age <small>(optional)</small><input value="number" id="number" min="13" max="120" type="number" placeholder="Age"></label>
-            </fieldset>
+                <fieldset>
+                    <select id="dropdown">
+                        <option>Select current role</option>
+                        <option>Role 1</option>
+                        <option>Role 2</option>
 
-            <fieldset>
-                <select id="dropdown">
-                    <option>Select current role</option>
-                    <option>Role 1</option>
-                    <option>Role 2</option>
-
-                </select>
-            </fieldset>
-            <fieldset>
-                <label for="Defintely"><input name="recomendation" value="Defintely" type="radio"></label>
-                <label for="Maybe"><input name="recomendation" value="Maybe" type="radio"></label>
-                <label for="NotSure"><input name="recomendation" value="NotSure" type="radio"></label>
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <label for="Defintely"><input name="recomendation" value="Defintely" type="radio"></label>
+                    <label for="Maybe"><input name="recomendation" value="Maybe" type="radio"></label>
+                    <label for="NotSure"><input name="recomendation" value="NotSure" type="radio"></label>
             
-            </fieldset>
+                </fieldset>
 
-            <fieldset>
-                <select id="dropdown">
-                    <option>Select an option</option>
-                    <option>Role 1</option>
-                    <option>Role 2</option>
+                <fieldset>
+                    <select id="dropdown">
+                        <option>Select an option</option>
+                        <option>Role 1</option>
+                        <option>Role 2</option>
 
-                </select>
-            </fieldset>
-            <fieldset id="checkboxes">
-                <label><input type="checkbox"> Front-end Projects</label>
-                <label><input type="checkbox"> Back-end Projects</label>
-                <label><input type="checkbox"> Data Visualization</label>
-                <label><input type="checkbox"> Challenges</label>
-                <label><input type="checkbox"> Open Source Community</label>
-                <label><input type="checkbox"> Gitter help rooms</label>
-                <label><input type="checkbox"> Videos</label>
-                <label><input type="checkbox"> City Meetups</label>
-                <label><input type="checkbox"> Wiki</label>
-                <label><input type="checkbox"> Forum</label>
-                <label><input type="checkbox"> Additional Courses</label>
-            </fieldset>
+                    </select>
+                </fieldset>
+                <fieldset id="checkboxes">
+                    <label><input type="checkbox"> Front-end Projects</label>
+                    <label><input type="checkbox"> Back-end Projects</label>
+                    <label><input type="checkbox"> Data Visualization</label>
+                    <label><input type="checkbox"> Challenges</label>
+                    <label><input type="checkbox"> Open Source Community</label>
+                    <label><input type="checkbox"> Gitter help rooms</label>
+                    <label><input type="checkbox"> Videos</label>
+                    <label><input type="checkbox"> City Meetups</label>
+                    <label><input type="checkbox"> Wiki</label>
+                    <label><input type="checkbox"> Forum</label>
+                    <label><input type="checkbox"> Additional Courses</label>
+                </fieldset>
+
+                <fieldset>
+                    <label>Any comments or suggestions?
+                        <textarea id="" rows="3" cols="30" placeholder="Enter your comments here..."></textarea>
+                    </label>
+                </fieldset>
+                <button type="submit">Submit</button>
             
-
+        </div>
         </form>
 
     </main>
