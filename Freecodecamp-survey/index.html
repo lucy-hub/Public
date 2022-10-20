@@ -15,14 +15,14 @@
         <div class="form-box">
             <form id="survey-form">
                 <fieldset>
-                    <label id="name-label" for="name"><p class="p2">Name</p><input id="name" type="text" placeholder="Enter your name" required></label>
-                    <label id="email-label" for="email"><p class="p2">Email</p><input id="email" type="email" placeholder="Enter your Email" required></label>
-                    <label id="number-label" for="number"><p class="p2">Age</p> <small>(optional)</small><input value="number" id="number" min="13" max="120" type="number" placeholder="Age"></label>
+                    <label id="name-label" for="name"><p class="p2">Name</p><input id="name" type="text" class="input1" placeholder="Enter your name" required></label>
+                    <label id="email-label" for="email"><p class="p2">Email</p><input id="email" type="email" class="input1" placeholder="Enter your Email" required></label>
+                    <label id="number-label" for="number"><p class="p2">Age <small>(optional)</small></p><input value="number" class="input1" id="number" min="13" max="120" type="number" placeholder="Age"></label>
                 </fieldset>
 
                 <fieldset>
                     <label><p class="p2">What aspects of computer science do you prefer?</p></label>
-                        <select id="dropdown">
+                        <select id="dropdown" class="input1">
                         
                             <option>Select a prefered option</option>
                             <option>Programming</option>
@@ -38,15 +38,17 @@
                 
                 <fieldset>
                     <label><p class="p2">Would you recomend Computer Science to a friend?</p>
-                        <label for="Defintely"><input name="recomendation" value="Defintely" type="radio">Defintely</label>
-                        <label for="Maybe"><input name="recomendation" value="Maybe" type="radio">Maybe</label>
-                        <label for="NotSure"><input name="recomendation" value="NotSure" type="radio">Not sure</label>
+                        <div class="p3">
+                            <label for="Defintely"><input name="recomendation" value="Defintely" type="radio">Defintely</label>
+                            <label for="Maybe"><input name="recomendation" value="Maybe" type="radio">Maybe</label>
+                            <label for="NotSure"><input name="recomendation" value="NotSure" type="radio">Not sure</label>
+                        </div>
                     </label>
                     </fieldset>
                     
                 <fieldset>
                     <label><p class="p2">What carriers/jobs relating to Computer Science are you interested in?</p>
-                        <select id="dropdown">
+                        <select id="dropdown" class="input1">
                             <option>Select an option</option>
                             <option>Software Developer</option>
                             <option>Web Developer</option>
@@ -60,17 +62,26 @@
                     </label>
                 </fieldset>
                 
-                <fieldset id="checkboxes">
+                <fieldset id="checkboxes" class="lists">
                     <label><p class="p2">What languages have you learned or want to learn?</p>
                         <label><input type="checkbox"> HTML</label>
+                        <br>
                         <label><input type="checkbox"> CSS</label>
+                        <br>
                         <label><input type="checkbox"> JavaScript</label>
+                        <br>
                         <label><input type="checkbox"> Python</label>
+                        <br>
                         <label><input type="checkbox"> C#</label>
+                        <br>
                         <label><input type="checkbox"> TypeScript</label>
+                        <br>
                         <label><input type="checkbox"> Swift</label>
+                        <br>
                         <label><input type="checkbox"> PHP</label>
+                        <br>
                         <label><input type="checkbox"> Haskell</label>
+                        <br>
                         <label><input type="checkbox"> Other</label>
                     </label>
                 </fieldset>
@@ -79,7 +90,7 @@
 
                 <fieldset>
                     <label><p class="p2">Any comments or suggestions?</p>
-                        <textarea id="" rows="3" cols="30" placeholder="Enter your comments here..."></textarea>
+                        <textarea id="" class="input1" placeholder="Enter your comments here..."></textarea>
                     </label>
                 </fieldset>
                 <button type="submit">Submit</button>
